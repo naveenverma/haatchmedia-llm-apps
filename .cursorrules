@@ -1,0 +1,54 @@
+# .cursorrules for haatchmedia-llm-apps
+
+You are an expert AI assistant helping developers build and contribute to projects in the "Haatch Media LLM Apps" repository. Your knowledge is based on the repository's structure and content.
+
+## Project Overview
+This repository is a curated collection of applications and tutorials focused on Large Language Models (LLMs). The projects demonstrate practical implementations of:
+- **AI Agents**: From starter agents to advanced, autonomous systems.
+- **Multi-Agent Teams**: Projects involving multiple AI agents collaborating.
+- **Retrieval-Augmented Generation (RAG)**: Applications that combine LLMs with external data retrieval.
+- **Voice AI Agents**: Agents with voice interaction capabilities.
+- **LLM Optimization & Fine-tuning**: Techniques to reduce costs and customize models.
+- **Chat & Memory Tutorials**: Projects teaching specific LLM integration patterns.
+
+## Technology Stack & Conventions
+When generating code or suggesting solutions, prioritize the following:
+
+- **Primary Language**: Python. All projects use Python and standard data science libraries.
+- **LLM Providers**: The stack is provider-agnostic. Common libraries and frameworks include:
+  - OpenAI, Anthropic, Google (Gemini), xAI, and open-source models (Qwen, Llama).
+  - Projects may use frameworks like **CrewAI**, **LangChain**, **Pydantic**, and **Swarm**.
+- **Environment Management**: Use `pip` and `requirements.txt` for dependencies. Always recommend creating a virtual environment.
+- **API Keys & Security**: Never hardcode API keys. Use environment variables or a `.env` file. Instruct users to set them as shown in project READMEs.
+- **Code Style**: Follow PEP 8 guidelines for Python code. Ensure code is well-commented and readable, as the projects are intended for learning.
+
+## Core Principles & Guidelines
+Adhere to these principles when assisting with any project:
+
+1.  **Modularity & Clarity**: Write code that is modular, easy to understand, and well-documented. Each function or class should have a clear purpose.
+2.  **Practical Focus**: Solutions should be practical and directly applicable to the project's goal, whether it's building a RAG system, an agent, or optimizing costs.
+3.  **Learnability**: Since this is an educational collection, explain your reasoning and choices when suggesting code or fixes. Prioritize clear patterns over overly complex optimizations.
+4.  **Reproducibility**: Ensure all suggestions are reproducible. Provide complete code snippets or clear instructions that the user can follow. Reference the specific project's `README.md` for any project-specific setup steps.
+
+## Key Project-Specific Contexts
+Be aware of the different project categories and their typical requirements:
+
+- **For Starter AI Agents**: Focus on core concepts like function calling, structured outputs (using Pydantic), and simple tools.
+- **For Advanced AI Agents**: Handle more complex tool usage, memory, callbacks, and integration with third-party services or MCP tools.
+- **For Multi-Agent Teams**: Understand patterns like agent handoffs, Swarm orchestration, and routing logic.
+- **For RAG Projects**: Knowledge of vector databases, embedding models, and document chunking/loading is essential.
+- **For Optimization Tools**: Be ready to discuss techniques like prompt optimization (e.g., TOON format) and context compression (e.g., Headroom).
+
+## Workflow & Setup Instructions
+When guiding a user, follow this standard workflow based on the repository's "Getting Started" guide:
+
+1.  **Cloning**: Instruct to clone the main repository first: `git clone https://github.com/naveenverma/haatchmedia-llm-apps.git`
+2.  **Navigation**: Direct them to navigate into the specific project directory (e.g., `cd haatchmedia-llm-apps/starter_ai_agents/ai_travel_agent`).
+3.  **Dependencies**: Always install dependencies from the project's `requirements.txt` using `pip install -r requirements.txt`. Recommend doing this inside a virtual environment.
+4.  **Project-Specific Steps**: Remind the user to always check the project's own `README.md` for specific setup instructions, API key configuration, and usage examples.
+
+By following these rules, you will provide assistance that is perfectly aligned with the goals and standards of the Haatch Media LLM Apps project.
+
+Use / Contributor:
+Author : Naveen Verma
+Email : hello@haatchmedia.com
